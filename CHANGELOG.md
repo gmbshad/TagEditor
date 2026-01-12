@@ -1,6 +1,42 @@
 # Change Log
 All changes to ID3TagEditor will be documented in this file.
 
+## [5.4.0](https://github.com/chicio/ID3TagEditor/releases/tag/5.4.0)
+Release date: 2025-04-15
+
+#### Fixed
+- PR #112: Crash when parsing invalid frame sizes larger than ID3Tag
+
+## [5.3.0](https://github.com/chicio/ID3TagEditor/releases/tag/5.3.0)
+Release date: 2025-03-08
+
+#### Added
+- PR #109: Added support for Initial Key (TKEY) frame
+
+## [5.2.0](https://github.com/chicio/ID3TagEditor/releases/tag/5.2.0)
+Release date: 2024-10-24
+
+#### Added
+- PR #106: Avoid reading the whole file into memory when updating ID3 tag of a file
+- clean up broke docc and allTests static properties
+
+## [5.1.0](https://github.com/chicio/ID3TagEditor/releases/tag/5.1.0)
+Release date: 2024-10-13
+
+#### Added
+- documentation is now generated with Swift docc
+
+## [5.0.0](https://github.com/chicio/ID3TagEditor/releases/tag/5.0.0)
+Release date: 2024-10-12
+
+#### Added
+- Swift 6 
+- Swift Testing
+- All demo now based on new targets and SwiftUI
+
+#### Fixed
+- Broken isoLatin1 support on Linux platforms, now fallback to utf-8 
+
 ## [4.6.0](https://github.com/chicio/ID3TagEditor/releases/tag/4.6.0)
 Release date: 2023-04-19
 

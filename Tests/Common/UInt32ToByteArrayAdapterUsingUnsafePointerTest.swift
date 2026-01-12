@@ -5,20 +5,14 @@
 //  2018 Fabrizio Duroni.
 //
 
-import XCTest
+import Testing
 @testable import ID3TagEditor
 
-class UInt32ToByteArrayAdapterUsingUnsafePointerTest: XCTestCase {
-    let uiInt32ToByteArrayAdapterUsingUnsafePointer = UInt32ToByteArrayAdapterUsingUnsafePointer()
-
-    func testAdapt32BitUnsignedInteger() {
-        XCTAssertEqual(
-            uiInt32ToByteArrayAdapterUsingUnsafePointer.adapt(uInt32: UInt32(0x11223344)),
+struct UInt32ToByteArrayAdapterUsingUnsafePointerTest {
+    @Test func testAdapt32BitUnsignedInteger() {
+        #expect(
+            UInt32ToByteArrayAdapterUsingUnsafePointer().adapt(uInt32: UInt32(0x11223344)) ==
             [0x11, 0x22, 0x33, 0x44]
         )
     }
-
-    static let allTests = [
-        ("testAdapt32BitUnsignedInteger", testAdapt32BitUnsignedInteger)
-    ]
 }
